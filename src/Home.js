@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Home() {
     const navigate = useNavigate();
   return (
-    <div className="heropage min-h-screen flex flex-col justify-center items-center" style={{backgroundImage: `url(${mainlanding})`, backgroundSize: 'cover'}}>
+    <div className="heropage h-screen flex flex-col" style={{backgroundImage: `url(${mainlanding})`, backgroundSize: 'cover'}}>
       <div className="text-center">
         <img src={logo} alt="Header Image" className="mx-auto mt-10" style={{ width: '300px', height: 'auto' }}/>
         <h1 className="text-5xl mt-6 font-bold">
