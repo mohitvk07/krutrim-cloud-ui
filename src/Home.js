@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../src/image1.png";
+import mainlanding from "../src/main-landing.jpeg"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,9 +8,9 @@ import { useNavigate } from 'react-router-dom';
 export default function Home() {
     const navigate = useNavigate();
   return (
-    <div className="heropage flex flex-col justify-center items-center">
+    <div className="heropage min-h-screen flex flex-col justify-center items-center" style={{backgroundImage: `url(${mainlanding})`, backgroundSize: 'cover'}}>
       <div className="text-center">
-        <img src={logo} alt="Header Image" className="mx-auto mt-10" />
+        <img src={logo} alt="Header Image" className="mx-auto mt-10" style={{ width: '300px', height: 'auto' }}/>
         <h1 className="text-5xl mt-6 font-bold">
           Revolutionising Workloads <span className="block">with</span> Krutrim Cloud
         </h1>

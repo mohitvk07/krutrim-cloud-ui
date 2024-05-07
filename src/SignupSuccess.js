@@ -9,7 +9,7 @@ export default function SignupSuccess() {
   return (
     <div className="heropage flex flex-col justify-center items-center">
       <div className="text-center">
-        <img src={logo} alt="Header Image" className="mx-auto mt-10" />
+        <img src={logo} alt="Header Image" className="mx-auto mt-10" style={{ width: '300px', height: 'auto' }}/>
         <h1 className="text-5xl mt-6 font-bold">
           Signup Success Page! Complete the verification
         </h1>
