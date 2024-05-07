@@ -19,8 +19,30 @@ export default function Login() {
     console.log('Form submitted')
   }
 
+  const Footer = () => {
+    return (
+      <footer className="text-white py-20 text-center">
+        <div className="flex justify-center mb-2">
+          <a href="#" className="text-black font-semibold hover:text-gray-700 px-4">
+            Privacy Policy
+          </a>
+          <a href="#" className="text-black font-semibold hover:text-gray-700 px-4">
+            Terms of Use
+          </a>
+          <a href="#" className="text-black font-semibold hover:text-gray-700 px-4">
+            Cookie Preferences
+          </a>
+        </div>
+        <p className="text-sm text-gray-700 font-medium">
+          Krutrim Cloud, Inc. or its affiliates. All rights reserved.
+        </p>
+      </footer>
+    );
+  };
+
   return (
-    <div className="flex flex-col justify-center items-center">
+    <>
+     <div className="flex flex-col justify-center items-center">
       <img src={logo} alt="Logo" className="mx-auto mt-10" style={{ width: '300px', height: 'auto' }}/>
       <div className="w-full max-w-4xl mt-6 px-6">
        
@@ -64,5 +86,9 @@ export default function Login() {
         
       </div>
     </div>
+
+    <Footer />
+    </>
+   
   );
 }
